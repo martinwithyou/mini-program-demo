@@ -1,0 +1,78 @@
+<view class="native" bindtap="viewTap">
+    <view class="outter">
+      <swiper
+        indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        interval="{{interval}}"
+        duration="{{duration}}"
+        >
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="350" />
+            </swiper-item>
+          </block>
+        </swiper>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <image class="item-image" src="../../images/icon_1.jpg"></image>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>{{title}}</text>
+        </view>
+        <view class="item-title">
+          <text>{{content}}</text>
+        </view>
+        <view class="item-title">
+        </view>
+        <view class="item-title">
+          <view class="details">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <image class="item-image" src="../../images/icon_2.jpg"></image>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>孔笙 Sheng Kong</text>
+        </view>
+        <view class="item-title">
+          <text>《大江大河》是通过国营经济、集体经济、个体经济去展现属于那个年代特有的情怀。</text>
+        </view>
+        <view class="item-title">
+        </view>
+        <view class="item-title">
+          <view class="details">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <image class="item-image" src="../../images/gaotie.jpg"></image>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>改革开放</text>
+        </view>
+        <view class="item-title">
+          <text>改革开放40年 带你感受人、车、路的时代变迁 ｜ 交通文化</text>
+        </view>
+        <view class="item-title">
+        </view>
+        <view class="item-title">
+          <view class="details">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <tab myProperty="kkl" bindmyevent="handler" />
+    <text>{{text}}{{x}}</text>
+</view>
